@@ -7,7 +7,7 @@ body {
   margin: 0;
   cursor: default;
   overflow: hidden;
-  background: url('help_bg.jpg') no-repeat;
+  background: url('help_Bg.jpg') no-repeat;
   color: #E0E0E0;
   font-family: Tahoma, Arial, sans-serif;
 
@@ -46,7 +46,7 @@ a:hover {
   left: 212px;
   width: 328px;
   height: 362px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .sectionTitleWrap {
@@ -64,11 +64,18 @@ a:hover {
   vertical-align: middle;
 }
 
-.contentFrame {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  background: transparent;
+.contentTitle {
+  font-weight: bold;
+  font-size: 12pt;
+  color: #FFFFFF;
+}
+
+.contentText {
+  color: #E0E0E0;
+}
+
+.spacer {
+  height: 140px;
 }
 </style>
 </head>
@@ -85,14 +92,14 @@ a:hover {
         <table height="20" border="0" cellpadding="0" cellspacing="0" width="100%">
           <tr>
             <td><img src="bg_left.gif" border="0"></td>
-            <td class="sectionTitleBg"><a href="tabs/notice.htm#NOTICE_MAIN" target="contentFrame">Notice</a></td>
+            <td class="sectionTitleBg"><a href="#NOTICE_MAIN">Notice</a></td>
             <td><img src="bg_right.gif" border="0"></td>
           </tr>
         </table>
       </td>
     </tr>
-    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="tabs/notice.htm#NOTICE_RULES" target="contentFrame">Server Rules</a></td></tr>
-    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="tabs/notice.htm#NOTICE_MIDMAN" target="contentFrame">Authorized Midman</a></td></tr>
+    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="#NOTICE_RULES">Server Rules</a></td></tr>
+    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="#NOTICE_MIDMAN">Authorized Midman</a></td></tr>
 
     <!-- LEVEL GUIDE -->
     <tr>
@@ -100,14 +107,14 @@ a:hover {
         <table height="20" border="0" cellpadding="0" cellspacing="0" width="100%">
           <tr>
             <td><img src="bg_left.gif" border="0"></td>
-            <td class="sectionTitleBg"><a href="tabs/level-guide.htm#LEVEL_MAIN" target="contentFrame">Level Guide</a></td>
+            <td class="sectionTitleBg"><a href="#LEVEL_MAIN">Level Guide</a></td>
             <td><img src="bg_right.gif" border="0"></td>
           </tr>
         </table>
       </td>
     </tr>
-    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="tabs/level-guide.htm#LEVEL_REBORN" target="contentFrame">Reborn Guide</a></td></tr>
-    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="tabs/level-guide.htm#LEVEL_MAPS" target="contentFrame">Leveling Maps</a></td></tr>
+    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="#LEVEL_REBORN">Reborn Guide</a></td></tr>
+    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="#LEVEL_MAPS">Leveling Maps</a></td></tr>
 
     <!-- FARM GUIDE -->
     <tr>
@@ -115,15 +122,15 @@ a:hover {
         <table height="20" border="0" cellpadding="0" cellspacing="0" width="100%">
           <tr>
             <td><img src="bg_left.gif" border="0"></td>
-            <td class="sectionTitleBg"><a href="tabs/farm-guide.htm#FARM_MAIN" target="contentFrame">Farm Guide</a></td>
+            <td class="sectionTitleBg"><a href="#FARM_MAIN">Farm Guide</a></td>
             <td><img src="bg_right.gif" border="0"></td>
           </tr>
         </table>
       </td>
     </tr>
-    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="tabs/farm-guide.htm#FARM_ITEMS" target="contentFrame">Weapon / Armor</a></td></tr>
-    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="tabs/farm-guide.htm#FARM_EP" target="contentFrame">EP Card</a></td></tr>
-    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="tabs/farm-guide.htm#FARM_GOLD" target="contentFrame">Gold / Dungeon</a></td></tr>
+    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="#FARM_ITEMS">Weapon / Armor</a></td></tr>
+    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="#FARM_EP">EP Card</a></td></tr>
+    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="#FARM_GOLD">Gold / Dungeon</a></td></tr>
 
     <!-- RV GUIDE -->
     <tr>
@@ -131,15 +138,15 @@ a:hover {
         <table height="20" border="0" cellpadding="0" cellspacing="0" width="100%">
           <tr>
             <td><img src="bg_left.gif" border="0"></td>
-            <td class="sectionTitleBg"><a href="tabs/rv-guide.htm#RV_MAIN" target="contentFrame">RV Guide</a></td>
+            <td class="sectionTitleBg"><a href="#RV_MAIN">RV Guide</a></td>
             <td><img src="bg_right.gif" border="0"></td>
           </tr>
         </table>
       </td>
     </tr>
-    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="tabs/rv-guide.htm#RV_WEAPON" target="contentFrame">Weapon RV</a></td></tr>
-    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="tabs/rv-guide.htm#RV_ARMOR" target="contentFrame">Armor RV</a></td></tr>
-    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="tabs/rv-guide.htm#RV_ACCESSORY" target="contentFrame">Accessory RV</a></td></tr>
+    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="#RV_WEAPON">Weapon RV</a></td></tr>
+    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="#RV_ARMOR">Armor RV</a></td></tr>
+    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="#RV_ACCESSORY">Accessory RV</a></td></tr>
 
     <!-- TIPS -->
     <tr>
@@ -147,14 +154,14 @@ a:hover {
         <table height="20" border="0" cellpadding="0" cellspacing="0" width="100%">
           <tr>
             <td><img src="bg_left.gif" border="0"></td>
-            <td class="sectionTitleBg"><a href="tabs/tips.htm#TIPS_MAIN" target="contentFrame">Tips</a></td>
+            <td class="sectionTitleBg"><a href="#TIPS_MAIN">Tips</a></td>
             <td><img src="bg_right.gif" border="0"></td>
           </tr>
         </table>
       </td>
     </tr>
-    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="tabs/tips.htm#TIPS_COMMANDS" target="contentFrame">Useful Commands</a></td></tr>
-    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="tabs/tips.htm#TIPS_GAMEPLAY" target="contentFrame">Gameplay Tips</a></td></tr>
+    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="#TIPS_COMMANDS">Useful Commands</a></td></tr>
+    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="#TIPS_GAMEPLAY">Gameplay Tips</a></td></tr>
 
     <!-- TOPUP -->
     <tr>
@@ -162,14 +169,14 @@ a:hover {
         <table height="20" border="0" cellpadding="0" cellspacing="0" width="100%">
           <tr>
             <td><img src="bg_left.gif" border="0"></td>
-            <td class="sectionTitleBg"><a href="tabs/topup.htm#TOPUP_MAIN" target="contentFrame">Topup</a></td>
+            <td class="sectionTitleBg"><a href="#TOPUP_MAIN">Topup</a></td>
             <td><img src="bg_right.gif" border="0"></td>
           </tr>
         </table>
       </td>
     </tr>
-    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="tabs/topup.htm#TOPUP_RATE" target="contentFrame">Rates</a></td></tr>
-    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="tabs/topup.htm#TOPUP_FREEBIES" target="contentFrame">Freebies</a></td></tr>
+    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="#TOPUP_RATE">Rates</a></td></tr>
+    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="#TOPUP_FREEBIES">Freebies</a></td></tr>
 
     <!-- ABOUT -->
     <tr>
@@ -177,27 +184,264 @@ a:hover {
         <table height="20" border="0" cellpadding="0" cellspacing="0" width="100%">
           <tr>
             <td><img src="bg_left.gif" border="0"></td>
-            <td class="sectionTitleBg"><a href="tabs/about-us.htm#ABOUT_MAIN" target="contentFrame">About Us</a></td>
+            <td class="sectionTitleBg"><a href="#ABOUT_MAIN">About Us</a></td>
             <td><img src="bg_right.gif" border="0"></td>
           </tr>
         </table>
       </td>
     </tr>
-    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="tabs/about-us.htm#ABOUT_SERVER" target="contentFrame">Server Info</a></td></tr>
-    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="tabs/about-us.htm#ABOUT_TEAM" target="contentFrame">Team / Credits</a></td></tr>
+    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="#ABOUT_SERVER">Server Info</a></td></tr>
+    <tr><td class="entry"><img src="arrow_s.gif" border="0" align="absmiddle"> <a href="#ABOUT_TEAM">Team / Credits</a></td></tr>
 
   </table>
 </div>
 
 <!-- RIGHT CONTENT -->
 <div class="contentBox">
-  <iframe
-    class="contentFrame"
-    name="contentFrame"
-    src="tabs/notice.htm#NOTICE_MAIN"
-    scrolling="auto"
-    frameborder="0">
-  </iframe>
+  <table width="308" border="0" cellpadding="0" cellspacing="0">
+
+    <!-- NOTICE -->
+    <tr><td height="50"><a name="NOTICE_MAIN"></a><span class="contentTitle">Notice</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Welcome to Bossran Help Guide.<br>
+        This section contains important reminders and safety information for all players.<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <tr><td height="50"><a name="NOTICE_RULES"></a><span class="contentTitle">Server Rules</span></td></tr>
+    <tr>
+      <td class="contentText">
+        1. Respect all players and staff at all times.<br>
+        2. Using cheats, hacks, or exploits is strictly prohibited.<br>
+        3. Real-money trading outside approved channels is at your own risk.<br>
+        4. Follow all official announcements from the server staff.<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <tr><td height="50"><a name="NOTICE_MIDMAN"></a><span class="contentTitle">Authorized Midman</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Only trade through verified middlemen approved by the server.<br>
+        Example:<br>
+        - &lt; MIDMAN &gt; Jhan<br>
+        - &lt; MIDMAN &gt; Ken<br>
+        - &lt; MIDMAN &gt; Vnlv<br><br>
+        GM / ADMIN will never ask for your password or personal information.<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <!-- LEVEL -->
+    <tr><td height="50"><a name="LEVEL_MAIN"></a><span class="contentTitle">Level Guide</span></td></tr>
+    <tr>
+      <td class="contentText">
+        This guide helps new players understand how to level, reborn, and progress efficiently.<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <tr><td height="50"><a name="LEVEL_REBORN"></a><span class="contentTitle">Reborn Guide</span></td></tr>
+    <tr>
+      <td class="contentText">
+        1. Reach the required level for reborn.<br>
+        2. Prepare your reborn card or required materials.<br>
+        3. Talk to the correct NPC or use the reborn system.<br>
+        4. Reborn rewards may include extra stats and progression bonuses.<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <tr><td height="50"><a name="LEVEL_MAPS"></a><span class="contentTitle">Leveling Maps</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Suggested leveling path:<br>
+        - Early Game: Starter zones<br>
+        - Mid Game: Death Prison / Fairytale<br>
+        - Late Game: Bossran custom farming maps<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <!-- FARM -->
+    <tr><td height="50"><a name="FARM_MAIN"></a><span class="contentTitle">Farm Guide</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Learn where to farm important materials, equipment, EP cards, and gold.<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <tr><td height="50"><a name="FARM_ITEMS"></a><span class="contentTitle">Weapon / Armor</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Recommended maps for weapons and armor:<br>
+        - Mutant<br>
+        - Fairytale<br>
+        - Bamboo Forest<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <tr><td height="50"><a name="FARM_EP"></a><span class="contentTitle">EP Card</span></td></tr>
+    <tr>
+      <td class="contentText">
+        EP Cards can be farmed from selected custom maps and event-related content.<br>
+        Check official updates for the latest EP farming locations.<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <tr><td height="50"><a name="FARM_GOLD"></a><span class="contentTitle">Gold / Dungeon</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Gold farming locations:<br>
+        - Death Prison<br>
+        - God Room<br>
+        - Dungeon runs<br><br>
+        Unlimited dungeon tip:<br>
+        Use portal on Island Map. Create a party, enter the dungeon, defeat the boss, disband, then repeat.<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <!-- RV -->
+    <tr><td height="50"><a name="RV_MAIN"></a><span class="contentTitle">RV Guide</span></td></tr>
+    <tr>
+      <td class="contentText">
+        This section lists the maximum random values for Bossran equipment.<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <tr><td height="50"><a name="RV_WEAPON"></a><span class="contentTitle">Weapon RV</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Weapon max random value example:<br>
+        - Attack / Hit Rate: 170%<br>
+        - HP: 2000<br>
+        - Max Upgrade: +13S<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <tr><td height="50"><a name="RV_ARMOR"></a><span class="contentTitle">Armor RV</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Armor max random value example:<br>
+        - Defense / Defense Rate: 100%<br>
+        - HP: 1500<br>
+        - HP Regen: 15%<br>
+        - Max Upgrade: +8S<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <tr><td height="50"><a name="RV_ACCESSORY"></a><span class="contentTitle">Accessory RV</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Accessory max random value example:<br>
+        - HP Regen: 15%<br>
+        - HP: 1500<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <!-- TIPS -->
+    <tr><td height="50"><a name="TIPS_MAIN"></a><span class="contentTitle">Tips</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Helpful reminders and quality-of-life tricks for smoother gameplay.<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <tr><td height="50"><a name="TIPS_COMMANDS"></a><span class="contentTitle">Useful Commands</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Example custom commands:<br>
+        - /pow 100<br>
+        - /dex 100<br>
+        - /int 100<br>
+        - /vit 100<br>
+        - /stm 100<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <tr><td height="50"><a name="TIPS_GAMEPLAY"></a><span class="contentTitle">Gameplay Tips</span></td></tr>
+    <tr>
+      <td class="contentText">
+        - Hold Ctrl while buying or selling to skip confirmation.<br>
+        - Press Alt while clicking items to preview them.<br>
+        - AFK in allowed zones for contribution or rewards if your server supports it.<br>
+        - Make a party before dungeon entry for faster repeated runs.<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <!-- TOPUP -->
+    <tr><td height="50"><a name="TOPUP_MAIN"></a><span class="contentTitle">Topup</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Topup details, rates, and promotional rewards are listed here.<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <tr><td height="50"><a name="TOPUP_RATE"></a><span class="contentTitle">Rates</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Sample rates:<br>
+        - 1 Peso = 1 EP<br>
+        - 500 PHP = 1,500 EP (one-time purchase sample promo)<br><br>
+        Payment method example:<br>
+        GCash / other approved methods<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <tr><td height="50"><a name="TOPUP_FREEBIES"></a><span class="contentTitle">Freebies</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Sample topup freebies:<br>
+        - 1,500 EP to 2,499 EP : Copper Genesis Hood<br>
+        - 2,500 EP to 4,999 EP : Silver Genesis Hood<br>
+        - 5,000 EP or more : Golden Genesis Hood<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <!-- ABOUT -->
+    <tr><td height="50"><a name="ABOUT_MAIN"></a><span class="contentTitle">About Us</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Learn about the server, its purpose, and the team behind it.<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <tr><td height="50"><a name="ABOUT_SERVER"></a><span class="contentTitle">Server Info</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Bossran is a custom private server built for nostalgic gameplay with updated systems and custom content.<br>
+        This server aims to provide a long-term home for players who enjoy classic RAN Online style progression.<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+    <tr><td height="50"><a name="ABOUT_TEAM"></a><span class="contentTitle">Team / Credits</span></td></tr>
+    <tr>
+      <td class="contentText">
+        Managed by the Bossran team in collaboration with partner developers and community supporters.<br>
+        For updates, events, and announcements, follow the official pages and server channels.<br>
+      </td>
+    </tr>
+    <tr><td class="spacer"></td></tr>
+
+  </table>
 </div>
 
 </body>
